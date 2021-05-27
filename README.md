@@ -2,13 +2,13 @@
 
 **This pipeline is used to help coordinate phylogeographic analysis of large viral datasets focusing on Sars-CoV-2**.
 
-[![GitHub Actions CI Status](https://github.com/nf-core/phylofunk/workflows/nf-core%20CI/badge.svg)](https://github.com/nf-core/phylofunk/actions)
-[![GitHub Actions Linting Status](https://github.com/nf-core/phylofunk/workflows/nf-core%20linting/badge.svg)](https://github.com/nf-core/phylofunk/actions)
+[![GitHub Actions CI Status](https://github.com/jtmccr1/nf-core-phylofunk/workflows/nf-core%20CI/badge.svg)](https://github.com/jtmccr1/nf-core-phylofunk/actions)
+[![GitHub Actions Linting Status](https://github.com/jtmccr1/nf-core-phylofunk/workflows/nf-core%20linting/badge.svg)](https://github.com/jtmccr1/nf-core-phylofunk/actions)
 [![Nextflow](https://img.shields.io/badge/nextflow-%E2%89%A520.04.0-brightgreen.svg)](https://www.nextflow.io/)
 
-[![install with bioconda](https://img.shields.io/badge/install%20with-bioconda-brightgreen.svg)](https://bioconda.github.io/)
-[![Docker](https://img.shields.io/docker/automated/nfcore/phylofunk.svg)](https://hub.docker.com/r/nfcore/phylofunk)
-[![Get help on Slack](http://img.shields.io/badge/slack-nf--core%20%23phylofunk-4A154B?logo=slack)](https://nfcore.slack.com/channels/phylofunk)
+<!-- [![install with bioconda](https://img.shields.io/badge/install%20with-bioconda-brightgreen.svg)](https://bioconda.github.io/) -->
+[![Docker](https://img.shields.io/docker/automated/jtmccr1/nf-core-phylofunk.svg)](https://hub.docker.com/r/jtmccr1/nf-core-phylofunk)
+<!-- [![Get help on Slack](http://img.shields.io/badge/slack-nf--core%20%23phylofunk-4A154B?logo=slack)](https://nfcore.slack.com/channels/phylofunk) -->
 
 ## Introduction
 
@@ -69,7 +69,7 @@ of this pipeline:
 
 If you would like to contribute to this pipeline, please see the [contributing guidelines](.github/CONTRIBUTING.md).
 
-For further information or help, don't hesitate to get in touch on the [Slack `#phylofunk` channel](https://nfcore.slack.com/channels/phylofunk) (you can join with [this invite](https://nf-co.re/join/slack)).
+<!-- For further information or help, don't hesitate to get in touch on the [Slack `#phylofunk` channel](https://nfcore.slack.com/channels/phylofunk) (you can join with [this invite](https://nf-co.re/join/slack)). -->
 
 ## Citations
 

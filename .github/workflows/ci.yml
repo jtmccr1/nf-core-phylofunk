@@ -15,7 +15,7 @@ jobs:
   test:
     name: Run workflow tests
     # Only run on push if this is the nf-core dev branch (merged PRs)
-    if: ${{ github.event_name != 'push' || (github.event_name == 'push' && github.repository == 'nf-core/phylofunk') }}
+    if: ${{ github.event_name != 'push' || (github.event_name == 'push' && github.repository == 'jtmccr1/nf-core-phylofunk') }}
     runs-on: ubuntu-latest
     env:
       NXF_VER: ${{ matrix.nxf_ver }}
@@ -37,13 +37,13 @@ jobs:
 
       - name: Build new docker image
         if: env.MATCHED_FILES
-        run: docker build --no-cache . -t nfcore/phylofunk:dev
+        run: docker build --no-cache . -t jtmccr1/nf-core-phylofunk:dev
 
       - name: Pull docker image
         if: ${{ !env.MATCHED_FILES }}
         run: |
-          docker pull nfcore/phylofunk:dev
-          docker tag nfcore/phylofunk:dev nfcore/phylofunk:dev
+          docker pull jtmccr1/nf-core-phylofunk:dev
+          docker tag jtmccr1/nf-core-phylofunk:dev jtmccr1/nf-core-phylofunk:dev
 
       - name: Install Nextflow
         env:

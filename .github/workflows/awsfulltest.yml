@@ -22,7 +22,7 @@ env:
 jobs:
   run-awstest:
     name: Run AWS full tests
-    if: github.repository == 'nf-core/phylofunk'
+    if: github.repository == 'jtmccr1/nf-core-phylofunk'
     runs-on: ubuntu-latest
     steps:
       - name: Setup Miniconda
@@ -43,4 +43,4 @@ jobs:
             --job-name nf-core-phylofunk \
             --job-queue $AWS_JOB_QUEUE \
             --job-definition $AWS_JOB_DEFINITION \
-            --container-overrides '{"command": ["nf-core/phylofunk", "-r '"${GITHUB_SHA}"' -profile test --outdir s3://'"${AWS_S3_BUCKET}"'/phylofunk/results-'"${GITHUB_SHA}"' -w s3://'"${AWS_S3_BUCKET}"'/phylofunk/work-'"${GITHUB_SHA}"' -with-tower"], "environment": [{"name": "TOWER_ACCESS_TOKEN", "value": "'"$TOWER_ACCESS_TOKEN"'"}]}'
+            --container-overrides '{"command": ["jtmccr1/nf-core-phylofunk", "-r '"${GITHUB_SHA}"' -profile test --outdir s3://'"${AWS_S3_BUCKET}"'/phylofunk/results-'"${GITHUB_SHA}"' -w s3://'"${AWS_S3_BUCKET}"'/phylofunk/work-'"${GITHUB_SHA}"' -with-tower"], "environment": [{"name": "TOWER_ACCESS_TOKEN", "value": "'"$TOWER_ACCESS_TOKEN"'"}]}'
